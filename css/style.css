@@ -1,0 +1,12 @@
+@layer reset, init, layout, components;
+
+@import url('normalize.css') layer(reset);
+@import url('setup.css') layer(init);
+@import url('layout.css') layer(layout);
+@import url('components/main-dialog.css') layer(components);
+
+@layer components {
+  body {
+    background-color: var(--background);
+  }
+}
