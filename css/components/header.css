@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+  padding: 0 1em;
+
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.header__buttons {
+  padding: 0;
+}
+
+.header__button {
+  display: inline-block;
+  border: 2px solid var(--color-primary);
+  padding: 0.4em;
+
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+  }
+}

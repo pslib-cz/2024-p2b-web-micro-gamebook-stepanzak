@@ -1,12 +1,24 @@
-@layer reset, init, layout, components;
+@layer reset, init, layout, design, components;
 
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded') layer(init);
 @import url('normalize.css') layer(reset);
 @import url('setup.css') layer(init);
 @import url('layout.css') layer(layout);
 @import url('components/main-dialog.css') layer(components);
+@import url('components/header.css') layer(components);
+@import url('components/footer.css') layer(components);
 
-@layer components {
+@layer design {
   body {
     background-color: var(--background);
+  }
+
+  .icon {
+    text-decoration: none;
+    color: var(--color-primary);
+
+    &:visited {
+      color: var(--color-primary);
+    }
   }
 }

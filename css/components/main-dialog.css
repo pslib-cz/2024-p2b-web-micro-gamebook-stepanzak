@@ -22,6 +22,7 @@
   }
 }
 
+/* The buttons/links player clicks to decide where to go next */
 .main-dialog__options {
   list-style: none;
   display: flex;
@@ -55,14 +56,22 @@
   }
 }
 
-@media (max-width: 480px) {
+/* Hide the main dialog border when it would look bad */
+@media (max-height: 800px) or ((max-width: 1000px) and (max-height: 1300px)) {
   .main-dialog {
     border: none;
+    margin: 0;
+  }
+}
+
+/* phone layout */
+@media (max-width: 480px) {
+  .main-dialog {
+    padding: 0 2em;
   }
 
   .main-dialog__options {
     flex-direction: column;
-
     width: 100%;
   }
 }

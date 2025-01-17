@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 3em 0;
+
+  border-top: 2px solid var(--color-primary);
+}
+
+.footer__icon--intext {
+  display: inline-block;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+
+  >svg {
+    height: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.5em 0;
+  }
+}
