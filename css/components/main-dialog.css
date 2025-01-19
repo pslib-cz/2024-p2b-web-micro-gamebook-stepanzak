@@ -3,13 +3,21 @@
   flex-direction: column;
   align-items: center;
   padding: 2em;
-  border: 2px solid var(--color-primary);
   margin: 1em;
+  border: 2px solid var(--color-primary);
 }
 
 .main-dialog__text {
   max-width: 80ch;
   font-size: 1.2rem;
+}
+
+/* wrapper to be able to have image and options side by side
+* it's used for the phone landscape layout, here it behaves like it doesn't exist */
+.main-dialog__imageoptionswrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-dialog__image {
@@ -81,5 +89,24 @@
   .main-dialog__options {
     flex-direction: column;
     width: 100%;
+  }
+}
+
+/* layout on screen with small height but bigger width
+* e.g. phone in landscape mode */
+@media (min-width: 750px) and (max-height: 500px) {
+  .main-dialog__imageoptionswrapper {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1em;
+  }
+
+  .main-dialog__image>img {
+    max-height: min(60vh, 25em);
+  }
+
+  .main-dialog__options {
+    flex-direction: column;
   }
 }
