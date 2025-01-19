@@ -94,7 +94,7 @@ def parseStructure():  # {{{
                 for item in parsedLine:
                     if i == 0:
                         pageId = item
-                        location["image"] = item + ".jpg"
+                        location["image"] = item + ".webp"
                     elif i == 1:
                         location["content"] = item
                     # elif i == 2:
