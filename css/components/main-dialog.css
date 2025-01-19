@@ -114,6 +114,6 @@
 /* remove top and bottom padding on small screens */
 @media (max-height: 600px) {
   .main-dialog {
-    padding: 0 2em;
+    padding: 0 2em 1em;
   }
 }
