@@ -8,5 +8,5 @@ for img in images-orig/*; do
     -quality 85 \
     -interlace Plane \
     -gaussian-blur 0.05 \
-    "images/$(basename "$img").webp"
+    "images/$(basename "${img%.*}").webp"
 done
